@@ -48,7 +48,7 @@ function x_out = algo_allocation(A, r,x_n0, maxiter)
 x_out = x_n0;
 iter2 = 0;
 lambda = 0.5; 
-stepsize = 5e-2; 
+stepsize = 1e-2; 
 while(iter2 < maxiter)
     g = x_out;
     g(g(:)>0) = 1;
